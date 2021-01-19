@@ -10,5 +10,13 @@ then
 	echo "Not Present"
 fi
 }
-employeeAttandence
 
+function employeeDailyWage() {
+wageperHour=20
+fulldayHours=8
+dailyWage=$(( $wageperHour * $fulldayHours ))
+echo " Total Full Day Wage is " $dailyWage
+}
+
+employeeAttandence
+employeeDailyWage
