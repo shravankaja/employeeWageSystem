@@ -32,7 +32,24 @@ then
 	echo "Wage for whole month is" $wageMonth
 fi 
 }
+function wageCondition() {
+noofHours=100
+moofDays=20
+if [ $noofHours -eq 100 ]
+then 
+	wageMonth=$(wageforMonth)
+	echo "After Evaluating working days or Hours total wage" $wageMonth
+elif [ $noofDays -eq 20 ]
+then
+	 wageMonth=$(wageforMonth)
+	 echo "After Evaluating working days or Hours total wage" $wageMonth
+
+fi
+}
+
 employeeAttandence
 employeeDailyWage
 parttimeemployeeWage
 wageforMonth
+wageCondition
+s
