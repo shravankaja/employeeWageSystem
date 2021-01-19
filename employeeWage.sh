@@ -20,9 +20,19 @@ echo " Total Full Day Wage is " $dailyWage
 function parttimeemployeeWage() {
 wageperHour=8
 fulldayHours=4
-dailyWage=$(( $wageperHour * $fulldayHours ))
+partdailyWage=$(( $wageperHour * $fulldayHours ))
 echo "Total Part time employee wage is" $dailyWage
+}
+
+function wageforMonth() {
+noofDays=20
+if [ $noofDays -ge 20 ]
+then 
+	wageMonth=$(( $noofDays * $dailyWage ))
+	echo "Wage for whole month is" $wageMonth
+fi 
 }
 employeeAttandence
 employeeDailyWage
 parttimeemployeeWage
+wageforMonth
