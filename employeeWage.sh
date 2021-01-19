@@ -17,6 +17,12 @@ fulldayHours=8
 dailyWage=$(( $wageperHour * $fulldayHours ))
 echo " Total Full Day Wage is " $dailyWage
 }
-
+function parttimeemployeeWage() {
+wageperHour=8
+fulldayHours=4
+dailyWage=$(( $wageperHour * $fulldayHours ))
+echo "Total Part time employee wage is" $dailyWage
+}
 employeeAttandence
 employeeDailyWage
+parttimeemployeeWage
