@@ -46,10 +46,24 @@ then
 
 fi
 }
+function partorfullTime() {
+partTime=1
+fullTime=0
+rand=$(($RANDOM%2))
+if [ $rand -eq 1 ]
+then
+	echo "full time "
+	fulldayHours=4
+else
+	echo "part time "
+        fulldayHours=8
+fi
+}
+
 
 employeeAttandence
 employeeDailyWage
 parttimeemployeeWage
 wageforMonth
 wageCondition
-s
+partorfullTime
